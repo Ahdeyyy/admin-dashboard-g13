@@ -1,0 +1,37 @@
+.main-container {  display: grid;
+    grid-template-columns: 0.8fr 1.3fr 0.9fr;
+    grid-template-rows: 0.4fr 1.5fr 1.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navbar navbar navbar"
+        "sidebar statistics team"
+        "sidebar orders team";
+    }
+      
+    .navbar { 
+        grid-area: navbar; 
+        border: 1px solid red
+    }
+      
+    .sidebar { 
+        grid-area: sidebar;
+        border: 1px solid red 
+    }
+      
+    .statistics { 
+        grid-area: statistics; 
+        border: 1px solid red
+    }
+      
+    .orders { 
+        grid-area: orders; 
+        border: 1px solid red
+    }
+      
+    .team { 
+        grid-area: team; 
+        border: 1px solid red
+    }
+      
