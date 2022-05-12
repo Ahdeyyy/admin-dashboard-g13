@@ -6,8 +6,8 @@
     grid-auto-flow: row;
     grid-template-areas:
         "navbar navbar navbar"
-        "sidebar statistics team"
-        "sidebar orders team";
+        "sidebar statistics summary"
+        "sidebar orders  summary";
     }
       
     .navbar { 
@@ -30,8 +30,8 @@
         border: 1px solid red
     }
       
-    .team { 
-        grid-area: team; 
+    .summary { 
+        grid-area: summary; 
         border: 1px solid red
     }
       
