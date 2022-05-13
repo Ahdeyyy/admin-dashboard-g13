@@ -1,5 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: none;
+    text-decoration: none;
+    color: black
+}
+
 .main-container {  display: grid;
-    grid-template-columns: 0.8fr 1.3fr 0.9fr;
+    grid-template-columns: 0.5fr 1.3fr 0.5fr;
     grid-template-rows: 0.4fr 1.5fr 1.1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
@@ -12,12 +19,14 @@
       
     .navbar { 
         grid-area: navbar; 
-        border: 1px solid red
+        border: 1px solid red;
+        align-self: center;
+        
     }
       
     .sidebar { 
         grid-area: sidebar;
-        border: 1px solid red 
+        border: 1px solid green;
     }
       
     .statistics { 
@@ -32,6 +41,64 @@
       
     .summary { 
         grid-area: summary; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border: 1px solid red
     }
+        .income{
+            border: 1px solid blue;
+            width: 100%;
+            text-align: center;
+        }
+        .expenditure{
+            border: 1px solid blue;
+            width: 100%;
+            text-align: center;
+        }
+        .week{
+            border: 1px solid blue;
+            text-align: center;
+            width: 100%;
+        }
+        .month{
+            border: 1px solid blue;
+            width: 100%;
+            text-align: center;
+        }
+
       
+    .navbar-comp{
+        border: 1px solid red;
+        margin: 0 10%;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .navbar-comp > img {
+        display: none;
+    }
+    .sidebar-comp {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+    }
+    .sidebar-comp > div  {
+        border: 1px solid red;
+        margin-bottom: 10px;
+        padding: 10px;
+
+    }
+    .icon {
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .sidebar-comp > button{
+        text-decoration: none;
+        outline: none;
+        margin-top: 45vh;
+       border: 1px solid red;
+    }

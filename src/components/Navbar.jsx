@@ -1,14 +1,14 @@
 import React from "react"
 import icon from '../assets/icon-menu.svg'
-import avatar from '../assets/avatar.jpg'
+import { BiUser } from 'react-icons/bi'
 
 
 const Navbar = () => {
     return (
-        <div className='navbar' styles={{display:"flex" }}>
+        <div className='navbar-comp'>
             <img src={icon} alt ='icon'/>
             <span>Sphinx</span>
-            <span ><img src={avatar} alt='avatar' width='20px'/></span>
+            <BiUser/>
         </div>
       );
 }
