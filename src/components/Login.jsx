@@ -1,13 +1,35 @@
-import React from "react";
-
+import React , {useState} from "react";
+import './styles/login.css'
+import Body from "./Body";
 
 const Login = () => {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+     const handleSubmit = (event) => {
+         setIsSubmitted(true);
+     };
+
+const Form = (
+    <div className="body">
+        <form className="login-form" onSubmit={handleSubmit}>
+            <div className="user-input">
+                <label>Email</label>
+                <input type={"email"} required/>
+            </div>
+            <div className="user-input">
+                <label>Password</label>
+                <input type={"password"} required/>
+            </div>
+            <div className="user-input">
+                <input type={"submit"} value = "submit"/>
+            </div>
+            
+        </form> 
+        </div> 
+);
     return (
         <div>
-            <input type={"email"} value = "" placeholder="e-mail"/>
-            <input type={"password"} value = "" placeholder="password"/>
-            <input type={"submit"} value = "submit"/>
-        </div>  
+            {isSubmitted ? <Body/> : Form} 
+        </div>
     );
 }
 
