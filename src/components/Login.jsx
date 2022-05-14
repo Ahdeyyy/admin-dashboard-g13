@@ -1,11 +1,11 @@
 import React , {useState} from "react";
 import './styles/login.css'
 import Body from "./Body";
-
 const Login = () => {
-    const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(true);
      const handleSubmit = (event) => {
          setIsSubmitted(true);
+        
      };
 
 const Form = (

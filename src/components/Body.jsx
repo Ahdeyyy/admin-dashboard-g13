@@ -1,27 +1,65 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import './styles/body.css'
 import Navbar from "./Navbar"
 import chart  from '../assets/chart.webp'
 import { BsArrowDownLeft, BsArrowUpRight } from 'react-icons/bs'
 import SideBar from "./SideBar"
+import Login from "./Login"
+import axios from 'axios'
 
 
 const Body = () => {
-    return(
-        <div class="main-container">
-            <div class="navbar"><Navbar/></div>
+    const [data, setData] = useState({})
+    const [fetched, setFetched] = useState(false)
 
-            <div class="sidebar">
+    useEffect(()=>{
+        getData()
+        
+    }, [])
+
+    // axios.get('https://fakerapi.it/api/v1/companies?_quantity=3') 
+    //     .then(function (response) {
+    //         setData(response)
+    //         setFetched(true)
+            
+    //         setData(response.data)
+    //         console.log(data)
+    //     })
+    //     .catch((error)=>{
+    //         console.log(error)
+    //     })
+     const getData = async () => {
+         const {data } = await axios.get('https://fakerapi.it/api/v1/companies?_quantity=3') 
+         setData(data)
+         setFetched(true)
+         console.log(data)
+     }
+
+    return(
+        <div className="main-container">
+            <div className="navbar"><Navbar/></div>
+
+            <div className="sidebar">
                 <SideBar/>
             </div>
 
-            <div class="statistics">
+            <div className="statistics">
                 <img src={chart} alt='chart' width="80%"/>
             </div>
 
-            <div class="orders">Orders</div>
+            {fetched ? //name, email, phone gender image
+            
+            <div className="orders">
+                orders
+                <p>{data.data[0].name}</p>
+                <img src={data.data[0].image} width='40px'></img>
+                
+                  
+            
+            </div>: <p>Clients</p>}
+             
 
-            <div class="summary">
+            <div className="summary">
                 <h3>Transaction Summary</h3>
                 <div className='income'>
                     <i><BsArrowDownLeft/></i><br/>

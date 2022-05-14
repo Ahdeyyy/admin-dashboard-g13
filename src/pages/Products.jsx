@@ -3,6 +3,11 @@ import SideBar from "../components/SideBar";
 import './style.css'
 
 const Products = () => {
+
+    const fetcher = fetch('https://fakerapi.it/api/v1/products?_quantity=10') 
+        .then(res => res.json())
+        .then(data => console.log(data));
+
     return (
         <div className='products'>
             <div className='product-nav'><Navbar/></div>
