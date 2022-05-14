@@ -29,7 +29,7 @@ const Body = () => {
     //         console.log(error)
     //     })
      const getData = async () => {
-         const {data } = await axios.get('https://fakerapi.it/api/v1/companies?_quantity=3') 
+         const {data } = await axios.get('https://fakerapi.it/api/v1/companies?_quantity=1') 
          setData(data)
          setFetched(true)
          console.log(data)
