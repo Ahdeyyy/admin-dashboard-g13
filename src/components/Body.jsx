@@ -17,17 +17,7 @@ const Body = () => {
         
     }, [])
 
-    // axios.get('https://fakerapi.it/api/v1/companies?_quantity=3') 
-    //     .then(function (response) {
-    //         setData(response)
-    //         setFetched(true)
-            
-    //         setData(response.data)
-    //         console.log(data)
-    //     })
-    //     .catch((error)=>{
-    //         console.log(error)
-    //     })
+
      const getData = async () => {
          const {data } = await axios.get('https://fakerapi.it/api/v1/companies?_quantity=1') 
          setData(data)
