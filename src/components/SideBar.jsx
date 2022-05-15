@@ -17,7 +17,7 @@ const SideBar = () => {
             <div><Link to='/'> <i className="icon"><GrHomeRounded/></i> Dashboard</Link></div>
             <div><Link to='/products'> <i className="icon"><GoPackage/></i> Products</Link></div>
             <div><Link to='/team'> <i className="icon"><AiOutlineTeam/></i>Team</Link></div>
-            <button onClick={()=> setLogout(!logout)}> <i><ImExit/></i> Logout</button>
+            <div ><Link to='/'><i><ImExit/></i> Logout</Link> </div>
         </div>
        
     
