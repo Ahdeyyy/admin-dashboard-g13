@@ -15,7 +15,7 @@ const Products = () => {
 
 
     const getData = async () => {
-        const {data } = await axios.get(' https://fakerapi.it/api/v1/products?_quantity=1') 
+        const {data } = await axios.get(' https://fakerapi.it/api/v1/products?_quantity=10') 
         setData(data)
         setFetched(true)
         console.log(data)
@@ -27,6 +27,15 @@ const Products = () => {
             <div className='product-sidebar'><SideBar/></div>
             <div className='product'>
                 <h2>Products</h2>
+                {fetched ? data.data.map((item) =>  (
+                    <div className="product-item" key ={item.id}>
+                        <img src={item.image} width='50px'/>
+                        <p>{item.name}</p>
+                        <p>{item.net_price}</p>
+                        <p>{item.taxes}</p>
+                        <p>{item.price}</p>
+                    </div>
+                ) ): <p>gg</p>}
             </div>
             
             

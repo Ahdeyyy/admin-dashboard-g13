@@ -22,6 +22,7 @@
         border: 1px solid red;
         align-self: center;
         
+        
     }
       
     .sidebar { 
@@ -99,6 +100,5 @@
     .sidebar-comp > button{
         text-decoration: none;
         outline: none;
-        margin-top: 45vh;
        border: 1px solid red;
     }

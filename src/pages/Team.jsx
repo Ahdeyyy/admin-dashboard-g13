@@ -27,6 +27,16 @@ const Team = () => {
             <div className='team-sidebar'><SideBar/></div>
             <div className='team-members'>
                 <h2>Teampage</h2>
+                {fetched ?  data.data.map((item) => (
+                    <div className='item'key={item.id}>
+                        <img src={item.image} width="50px"/>
+                        <p>{item.firstname} {item.lastname}</p>
+                        <p>{item.email}</p>
+                        <p>{item.phone}</p>
+                        <p>{item.gender}</p>
+                    </div>
+                    
+                )) : <p>ok</p>}
             </div>
         </div>
       );

@@ -40,10 +40,13 @@ const Body = () => {
             {fetched ? //name, email, phone gender image
             
             <div className="orders">
-                orders
-                <p>{data.data[0].name}</p>
-                <img src={data.data[0].image} width='40px'></img>
+                <p>orders</p>
                 
+                <img src={data.data[0].image} width='40px'></img>
+                <p>{data.data[0].name}</p>
+                <p>{data.data[0].email}</p>
+                <p>{data.data[0].phone}</p>
+                <p>{data.data[0].contact.gender}</p>
                   
             
             </div>: <p>Clients</p>}
