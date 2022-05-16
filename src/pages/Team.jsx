@@ -29,7 +29,7 @@ const Team = () => {
                 <h2>Teampage</h2>
                 {fetched ?  data.data.map((item) => (
                     <div className='item'key={item.id}>
-                        <img src={item.image} width="50px"/>
+                        <img src={item.image} alt='item' width="50px"/>
                         <p>{item.firstname} {item.lastname}</p>
                         <p>{item.email}</p>
                         <p>{item.phone}</p>

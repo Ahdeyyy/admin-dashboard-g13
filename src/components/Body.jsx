@@ -4,7 +4,6 @@ import Navbar from "./Navbar"
 import chart  from '../assets/chart.webp'
 import { BsArrowDownLeft, BsArrowUpRight } from 'react-icons/bs'
 import SideBar from "./SideBar"
-import Login from "./Login"
 import axios from 'axios'
 
 
@@ -42,7 +41,7 @@ const Body = () => {
             <div className="orders">
                 <p>orders</p>
                 
-                <img src={data.data[0].image} width='40px'></img>
+                <img src={data.data[0].image} width='40px' alt='item'></img>
                 <p>{data.data[0].name}</p>
                 <p>{data.data[0].email}</p>
                 <p>{data.data[0].phone}</p>
@@ -53,16 +52,16 @@ const Body = () => {
              
 
             <div className="summary">
-                <h3>Transaction Summary</h3>
+                <h3>Transaction <br/>Summary</h3>
                 <div className='income'>
-                    <i><BsArrowDownLeft/></i><br/>
-                    <span>Income <br/>$12,730</span>
-                    <span></span>
+                    <i><BsArrowDownLeft  size={50} fill='white'/></i><br/>
+                    <p>Income <br/>
+                    <span>$12,730</span></p>
                 </div>
                 <div className='expenditure'> 
-                    <i><BsArrowUpRight/></i><br/>
-                    <span>Expenditure</span><br/>
-                    <span>$22,730</span>
+                    <i><BsArrowUpRight size={50} fill='white'/></i><br/>
+                    <p>Expenditure<br/>
+                    <span>$22,730</span></p>
                 </div>
                 <div className='week'>
                     <p>This Week <br/>$3000</p>

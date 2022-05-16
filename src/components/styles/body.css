@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik:wght@300;500;600;800&display=swap');
 *{
     box-sizing: border-box;
     margin: none;
     text-decoration: none;
-    color: black
+    color: black;
+    font-family: 'Rubik', sans-serif;
 }
+body{
+    background-color: #222831;
+}
+/* style guide
+    primary: #222831
+    secondary #EEEEEE
+
+
+    text #393E46
+    brownlike- #D65A31
+
+ */
 
 .main-container {  display: grid;
     grid-template-columns: 0.5fr 1.3fr 0.5fr;
     grid-template-rows: 0.4fr 1.5fr 1.1fr;
     grid-auto-columns: 1fr;
-    gap: 0px 0px;
+    gap: 0px 15px;
     grid-auto-flow: row;
     grid-template-areas:
         "navbar navbar navbar"
@@ -18,8 +32,11 @@
     }
       
     .navbar { 
-        grid-area: navbar; 
-        border: 1px solid red;
+        grid-area: navbar;
+        border: 1px solid brown;
+        background-color: rgba(255, 255, 255, 0.793);
+        margin: 0 25px;        
+        border-radius: 3px;
         align-self: center;
         
         
@@ -27,7 +44,9 @@
       
     .sidebar { 
         grid-area: sidebar;
-        border: 1px solid green;
+        border: 1px solid #2e3643;
+        border-radius: 7px;
+        padding-left: 10px;
     }
       
     .statistics { 
@@ -43,39 +62,93 @@
     .summary { 
         grid-area: summary; 
         display: flex;
+        text-align: center;
         flex-direction: column;
+        gap: 10px;
         align-items: center;
-        border: 1px solid red
+        border: 1px solid #2e3643;
+        border-radius: 7px;
     }
+        .summary> h3 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+        }
         .income{
-            border: 1px solid blue;
-            width: 100%;
+            border-radius: 10px;
+            width: 80%;
+            height: 100px;
+            margin-top: 20px;
+            display: flex;
             text-align: center;
+            background-color: rgb(20, 200, 20);
+            background-image: linear-gradient(to bottom right, rgb(20, 200, 20), rgb(125, 208, 132));
+        }
+        .income >i {
+            align-self: center;
+            width: 35%;
+            fill: white;
+        }
+        .income > p {
+            margin-top: 35px;
+            color: white;
+            padding: 5px;
+            align-self: right;
+        }
+        .income >p> span{
+            color: white;
+            font-size: 20px;
         }
         .expenditure{
-            border: 1px solid blue;
-            width: 100%;
+            border-radius: 10px;
+            width: 80%;
+            height: 100px;
+            display: flex;
             text-align: center;
+            background-color: rgb(20, 200, 20);
+            background-image: linear-gradient(to bottom right, rgb(255, 13, 13), rgb(201, 159, 157));
+       
+        }
+        .expenditure >i {
+            align-self: center;
+            width: 35%;
+            fill: white;
+        }
+        .expenditure > p {
+            font-size: 0.7em;
+            margin-top: 40px;
+            color: white;
+            padding: 5px;
+            align-self: right;
+        }
+        .expenditure >p> span{
+            color: white;
+            font-size: 20px;
         }
         .week{
             border: 1px solid blue;
             text-align: center;
-            width: 100%;
+            width: 80%;
         }
         .month{
             border: 1px solid blue;
-            width: 100%;
+            width: 80%;
             text-align: center;
         }
 
       
     .navbar-comp{
-        border: 1px solid red;
-        margin: 0 10%;
+        margin: 0 5%;
+        
         display: flex;
         align-self: center;
         justify-content: space-between;
         padding: 10px 0;
+    }
+    .navbar-comp > span{
+        font-family: 'Rubik Glitch', cursive;
+        color: brown;
     }
     .navbar-comp > img {
         display: none;
@@ -87,18 +160,37 @@
         margin-top: 15%;
     }
     .sidebar-comp > div  {
-        border: 1px solid red;
-        margin-bottom: 10px;
+        /* background-image: linear-gradient( to right, rgb(123, 121, 121), #b8c8e1 ); */
+        background-color: #303743;
+        color: white;
+        border-right: 2px solid #D65A31;
+        border-top: 1px solid #D65A31;
+        margin-bottom: 15px;
+        font-size: 15px;
         padding: 10px;
+        border-radius: 5px 5px 0px 5px
 
     }
+    .sidebar-comp > div:hover{
+        background-color: white;
+        transition: 0.5s;
+    }
+    .active{
+        font-size: 12px;
+        background-color: white;
+        padding: 2px 5px;
+        border-radius: 10px;
+    }
+    .sidetext{
+        color: #D65A31;
+        font-weight: bold;
+    }
+        
+    
     .icon {
         float: left;
+        color: #d4aaaa;
         margin-left: 10%;
         margin-right: 10%;
     }
-    .sidebar-comp > button{
-        text-decoration: none;
-        outline: none;
-       border: 1px solid red;
-    }
+    

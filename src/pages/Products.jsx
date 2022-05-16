@@ -29,7 +29,7 @@ const Products = () => {
                 <h2>Products</h2>
                 {fetched ? data.data.map((item) =>  (
                     <div className="product-item" key ={item.id}>
-                        <img src={item.image} width='50px'/>
+                        <img src={item.image} alt='item' width='50px'/>
                         <p>{item.name}</p>
                         <p>{item.net_price}</p>
                         <p>{item.taxes}</p>
