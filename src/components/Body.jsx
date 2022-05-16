@@ -54,21 +54,20 @@ const Body = () => {
             <div className="summary">
                 <h3>Transaction <br/>Summary</h3>
                 <div className='income'>
-                    <i><BsArrowDownLeft  size={50} fill='white'/></i><br/>
+                    <i><BsArrowDownLeft  size={45} fill='white'/></i><br/>
                     <p>Income <br/>
                     <span>$12,730</span></p>
                 </div>
                 <div className='expenditure'> 
-                    <i><BsArrowUpRight size={50} fill='white'/></i><br/>
+                    <i><BsArrowUpRight size={45} fill='white'/></i><br/>
                     <p>Expenditure<br/>
                     <span>$22,730</span></p>
                 </div>
                 <div className='week'>
-                    <p>This Week <br/>$3000</p>
-                    <span></span>
+                    <p>This Week <br/><span>$3000</span></p>
                 </div>
                 <div className='month'>
-                    <p>This Month <br/>$5780</p>
+                    <p>This Month <br/><span>$5780</span></p>
                 </div>
             </div>
 

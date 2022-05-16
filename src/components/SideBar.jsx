@@ -12,10 +12,10 @@ const SideBar = () => {
         
          
         <div className="sidebar-comp">
-            <div><NavLink to='/'> <i className="icon"><GrHomeRounded/></i>  <span className='sidetext'>Dashboard</span></NavLink></div>
-            <div><NavLink to='/products'> <i className="icon"><GoPackage/></i> <span className='sidetext'>Products</span></NavLink></div>
-            <div><NavLink activeClassName='active' to='/team'> <i className="icon"><AiOutlineTeam/></i> <span className='sidetext'>Team</span></NavLink></div>
-            <div ><Link to='/'><i className="icon"><ImExit/></i>  <span className='sidetext'>Logout</span></Link> </div>
+            <div><NavLink to='/'> <i className="icon"><GrHomeRounded fill='#D65A31'/></i>  <span className='sidetext'>Dashboard</span></NavLink></div>
+            <div><NavLink to='/products'> <i className="icon"><GoPackage fill='#D65A31'/></i> <span className='sidetext'>Products</span></NavLink></div>
+            <div><NavLink activeClassName='active' to='/team'> <i className="icon"><AiOutlineTeam fill='#D65A31'/></i> <span className='sidetext'>Team</span></NavLink></div>
+            <div ><Link to='/'><i className="icon"><ImExit fill='#D65A31'/></i>  <span className='sidetext'>Logout</span></Link> </div>
         </div>
        
     
