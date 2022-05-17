@@ -69,8 +69,8 @@ border: 1px solid blue; }
  @media (max-width: 320px) {
     .team{
         display: grid;
-           grid-template-columns: 0.8fr 1.3fr 0.9fr;
-           grid-template-rows: 0.1fr 1.5fr 1.1fr;
+           grid-template-columns: 0.8fr 1.3fr;
+           grid-template-rows: 0.1fr 1.5fr ;
            grid-auto-columns: 1fr;
            gap: 0px 0px;
            grid-auto-flow: row;
