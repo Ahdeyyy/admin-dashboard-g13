@@ -45,7 +45,7 @@ const Chart = () => {
                 }
             },
             y: {
-                ticks: { display: true,
+                ticks: { display: false,
                     color: "#D65A31"
                  },
                 gridLines: {
