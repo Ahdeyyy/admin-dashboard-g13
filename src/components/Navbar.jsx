@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='navbar-comp'>
             <img src={icon} alt ='icon'/>
             <span>Sphinx</span>
-            <BiUser/>
+            <BiUser fill={"#D65A31"}/>
         </div>
       );
 }
