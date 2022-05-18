@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import SideBar from "../components/SideBar";
 import './style.css'
 import axios from 'axios'
+import BeatLoader from 'react-spinners/BeatLoader'
 
 const Products = () => {
     const [data, setData] = useState({})
@@ -29,13 +30,13 @@ const Products = () => {
                 <h2>Products</h2>
                 {fetched ? data.data.map((item) =>  (
                     <div className="product-item" key ={item.id}>
-                        <img src={item.image} alt='item' width='50px'/>
-                        <p>{item.name}</p>
-                        <p>{item.net_price}</p>
-                        <p>{item.taxes}</p>
-                        <p>{item.price}</p>
+                        <img src={item.image} alt='item' width='50px'/><br/>
+                        <span style={{fontSize:'16px'}}>{item.name}</span><br/>
+                        <span>Net-Price: ${item.net_price}</span><br/>
+                        <span>Taxes: {item.taxes}</span><br/>
+                        <span>Price: ${item.price}</span>
                     </div>
-                ) ): <p>gg</p>}
+                ) ): <div  className='product-item'><BeatLoader color={"#D65A31"}/></div>}
             </div>
             
             
