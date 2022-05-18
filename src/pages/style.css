@@ -2,7 +2,7 @@
 
         display: grid;
         grid-template-columns: 0.8fr 1.3fr 0.9fr;
-        grid-template-rows: 0.1fr 1.5fr 1.1fr;
+        grid-template-rows: 0fr 1.5fr 1.1fr;
         grid-auto-columns: 1fr;
         gap: 40px 10px;
         grid-auto-flow: row;
@@ -58,9 +58,9 @@
 .team{
        display: grid;
        grid-template-columns: 0.8fr 1.3fr 0.9fr;
-       grid-template-rows: 0.1fr 1.5fr 1.1fr;
+       grid-template-rows: 0fr 1.5fr 1.1fr;
        grid-auto-columns: 1fr;
-       gap: 0px 0px;
+       gap: 40px 10px;
        grid-auto-flow: row;
        grid-template-areas:
          "navbar navbar navbar"
@@ -73,27 +73,48 @@
  }
      
 .team-nav { 
-    grid-area: navbar;
+    grid-area: navbar; 
+    margin: 0 5%;
+    border: 1px solid  #D65A31;
+}
+
+
+
+.item >img {
+    width: 100%;
+    height: 100px;
+    border: 1px solid  #D65A31;
+    margin-bottom: 10px;
+    align-self: center;
 }
 
 .team-members{ 
     grid-area: team;
+    border-radius: 7px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:  0px 70px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:  0px 70px;
+    border: 1px solid #2e3643;  
 }
-
-.item{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.team-members > h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
-
-.team-members img{
-    width: 40%;
+.item {
+    background-color: #303743;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 7px;
+    border: 1px solid #D65A31;
+    border-right: 2px solid #D65A31;
+    padding: 10px 15px;
 }
-
+.item >span {
+    font-size: 12px;
+}
 .team-members h2{
     color: #D65A31;;
 }
@@ -102,17 +123,35 @@
     color: #D65A31;
 }
 
- @media (max-width: 320px) {
+ @media (max-width: 800px) {
     .team{
         display: grid;
            grid-template-columns: 0.8fr 1.3fr;
-           grid-template-rows: 0.1fr 1.5fr ;
+           grid-template-rows: 0fr 1.5fr ;
            grid-auto-columns: 1fr;
-           gap: 0px 0px;
+           gap: 40px 0px;
            grid-auto-flow: row;
            grid-template-areas:
              "navbar navbar"
-             "sidebar team"
-             "sidebar team";     
+             "team team"
+             "team team";     
+    }
+    .team-sidebar{ display: none;}
+    .products{
+        display: grid;
+           grid-template-columns: 0.8fr 1.3fr;
+           grid-template-rows: 0fr 1.5fr ;
+           grid-auto-columns: 1fr;
+           gap: 40px 0px;
+           grid-auto-flow: row;
+           grid-template-areas:
+             "navbar navbar"
+             "team team"
+             "team team";  
+    }
+    .product-sidebar{
+         display: none
     }
  }
+
+
