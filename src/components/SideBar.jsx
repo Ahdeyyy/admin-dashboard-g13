@@ -11,7 +11,7 @@ const SideBar = () => {
             <div><NavLink to = '/' > <i className="icon"><GrHomeRounded fill="#D65A31"/></i> Dashboard</NavLink></div>
             <div><NavLink to='/products'> <i className="icon"><GoPackage/></i> Products</NavLink></div>
             <div><NavLink to='/team'> <i className="icon"><AiOutlineTeam/></i>Team</NavLink></div>
-            <button> <i><ImExit/></i> Logout</button>
+            <button> <NavLink to= '/login'> <i><ImExit/></i> Logout</NavLink></button>
         </div>
       );
 }

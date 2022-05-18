@@ -3,9 +3,12 @@ import './styles/login.css'
 import Body from "./Body";
 const Login = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
+<<<<<<< HEAD
      const handleSubmit = (event) => {
+=======
+     const handleSubmit = () => {
+>>>>>>> b45434a2646f4a7e7774801dff2923c021ded8ba
          setIsSubmitted(true);
-        
      };
 
 const Form = (

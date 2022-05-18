@@ -137,6 +137,10 @@
              "team team";     
     }
     .team-sidebar{ display: none;}
+    .team-members {margin: 0;}
+    .product {
+        margin: 0;
+    }
     .products{
         display: grid;
            grid-template-columns: 0.8fr 1.3fr;
