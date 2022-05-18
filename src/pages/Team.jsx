@@ -30,14 +30,14 @@ const Team = () => {
                 <h2>Teampage</h2>
                 {fetched ?  data.data.map((item) => (
                     <div className='item'key={item.id}>
-                        <img src={item.image} alt='item' width="50px"/>
-                        <p>{item.firstname} {item.lastname}</p>
-                        <p>{item.email}</p>
-                        <p>{item.phone}</p>
-                        <p>{item.gender}</p>
+                        <img src={item.image} alt='item'/><br/>
+                        <span style={{fontSize:'16px'}}>{item.firstname} {item.lastname}</span><br/>
+                        <span>{item.email}</span><br/>
+                        <span>{item.phone}</span><br/>
+                        <span style={{textTransform: 'uppercase'}}>{item.gender}</span><br/>
                     </div>
                     
-                )) : <div  className='loader-item'><BeatLoader color={"#D65A31"}/></div>}
+                )) : <div  className='product-item'><BeatLoader color={"#D65A31"}/></div>}
             </div>
         </div>
       );

@@ -7,7 +7,6 @@ import SideBar from "./SideBar"
 import axios from 'axios'
 import Chart from "./Chart"
 
-
 const Body = () => {
     const [data, setData] = useState({})
     const [fetched, setFetched] = useState(false)
@@ -32,6 +31,7 @@ const Body = () => {
             <div className="sidebar">
                 <SideBar/>
             </div>
+            
 
             <div className="statistics">
                 <div><Chart width={90}/></div>
