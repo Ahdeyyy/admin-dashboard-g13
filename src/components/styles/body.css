@@ -266,13 +266,30 @@ body{
     .client-details > span:nth-child(4){
        text-transform: uppercase;
     }
+    .hamburger{
+        position: fixed;
+        top: -20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.62);
+    }
+    .ham-item {
+        background-color: white;
+        width: 70%;
+        height: 100%;
+        padding: 30px 20px;
+    }
     
-    
- @media (max-width: 800px) {
+    @media (min-width: 800px) {
+        .hamburger{display: none;}
+    }
+ 
+    @media (max-width: 800px) {
     .main-container{
         display: grid;
     grid-template-columns: 0.5fr 1.3fr 0.5fr;
-    grid-template-rows: 0fr 0.3fr 1fr;
+    grid-template-rows: 0fr 0.7fr 0.5fr;
     grid-auto-columns: 1fr;
     gap: 40px 0px;
     grid-auto-flow: row;

@@ -1,8 +1,20 @@
 import React from 'react'
+import SideBar from './SideBar';
 
-const hamburgerMenu = () => {
+const hamburgerMenu = (props) => {
+
+    if(!props.show){
+        return null;
+    }
     return (
-        <div>Menuuuu</div>
+        <div className='hamburger'>
+            
+            <div className='ham-item'>
+                <p onClick={props.onClose}>X</p>
+                <SideBar/>
+            </div>
+           
+        </div>
       );
 }
  

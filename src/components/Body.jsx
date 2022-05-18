@@ -6,7 +6,7 @@ import { BsArrowDownLeft, BsArrowUpRight } from 'react-icons/bs'
 import SideBar from "./SideBar"
 import axios from 'axios'
 import Chart from "./Chart"
-
+import HamburgerMenu from "./HamburgerMenu"
 
 const Body = () => {
     const [data, setData] = useState({})
@@ -32,6 +32,7 @@ const Body = () => {
             <div className="sidebar">
                 <SideBar/>
             </div>
+            
 
             <div className="statistics">
                 <div><Chart width={90}/></div>
