@@ -8,7 +8,7 @@ const Login = () => {
      };
 
 const Form = (
-    <div className="body">
+    <div className="login-body">
         <form className="login-form" onSubmit={handleSubmit}>
             <div className="user-input">
                 <label>Email</label>
