@@ -65,7 +65,7 @@
        grid-template-areas:
          "navbar navbar navbar"
          "sidebar team team"
-         "sidebar team team";     
+         "sidebar team team";    
 }
 
 .team-sidebar {
