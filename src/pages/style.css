@@ -65,7 +65,7 @@
        grid-template-areas:
          "navbar navbar navbar"
          "sidebar team team"
-         "sidebar team team";     
+         "sidebar team team";    
 }
 
 .team-sidebar {
@@ -80,8 +80,14 @@
     grid-area: team;
     display: flex;
     flex-direction: column;
-    margin:  0px 70px;
-    border: 1px solid blue; 
+    align-items: center;
+    margin:  0px 70px; 
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .team-members img{

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Navbar from "../components/Navbar";
 import SideBar from "../components/SideBar";
+import BeatLoader from 'react-spinners/BeatLoader'
 
 const Team = () => {
 
@@ -36,7 +37,7 @@ const Team = () => {
                         <p>{item.gender}</p>
                     </div>
                     
-                )) : <p>ok</p>}
+                )) : <div  className='loader-item'><BeatLoader color={"#D65A31"}/></div>}
             </div>
         </div>
       );
