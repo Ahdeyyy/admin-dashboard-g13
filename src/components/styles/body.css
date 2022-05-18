@@ -5,6 +5,7 @@
     text-decoration: none;
     color: #D65A31;
     font-family: 'Rubik', sans-serif;
+    word-wrap: wrap;
 }
 body{
     background-color: #222831;
@@ -306,6 +307,10 @@ body{
     .navbar-comp > img {
         display: inline-block;
         background-color: #D65A31;
+    }
+    .client-details > span {
+        font-size: 0.6em;
+        word-wrap: break-word;
     }
     
 
