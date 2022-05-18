@@ -58,7 +58,7 @@ body{
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
     .statistics > div{
         display: flex;

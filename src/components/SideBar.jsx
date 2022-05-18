@@ -3,7 +3,7 @@ import  { GrHomeRounded } from 'react-icons/gr'
 import {AiOutlineTeam} from 'react-icons/ai'
 import { ImExit } from 'react-icons/im'
 import { GoPackage } from 'react-icons/go'
-import {Link, NavLink } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 const SideBar = () => {
     return (
         <div className="sidebar-comp">

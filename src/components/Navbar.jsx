@@ -2,7 +2,6 @@ import React, {useState } from "react"
 import icon from '../assets/icon-menu.svg'
 import { BiUser } from 'react-icons/bi'
 import HamburgerMenu from "./HamburgerMenu"
-import userEvent from "@testing-library/user-event"
 
 const Navbar = () => {
     const [show, setShow] = useState(false);

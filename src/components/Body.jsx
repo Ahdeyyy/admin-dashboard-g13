@@ -6,7 +6,6 @@ import { BsArrowDownLeft, BsArrowUpRight } from 'react-icons/bs'
 import SideBar from "./SideBar"
 import axios from 'axios'
 import Chart from "./Chart"
-import HamburgerMenu from "./HamburgerMenu"
 
 const Body = () => {
     const [data, setData] = useState({})
