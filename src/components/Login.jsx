@@ -2,14 +2,14 @@ import React , {useState} from "react";
 import './styles/login.css'
 import Body from "./Body";
 const Login = () => {
-    const [isSubmitted, setIsSubmitted] = useState(true);
+    const [isSubmitted, setIsSubmitted] = useState(false);
      const handleSubmit = (event) => {
          setIsSubmitted(true);
         
      };
 
 const Form = (
-    <div className="body">
+    <div className="login-body">
         <form className="login-form" onSubmit={handleSubmit}>
             <div className="user-input">
                 <label>Email</label>
