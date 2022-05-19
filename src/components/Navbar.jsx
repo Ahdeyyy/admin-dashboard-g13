@@ -1,7 +1,7 @@
 import React, {useState } from "react"
 import icon from '../assets/icon-menu.svg'
 import { BiUser } from 'react-icons/bi'
-import HamburgerMenu from "./hamburgerMenu"
+import HamburgerMenu from "./HamburgerMenu"
 
 const Navbar = () => {
     const [show, setShow] = useState(false);
